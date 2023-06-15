@@ -5,3 +5,5 @@ feh --bg-scale ~/.dwm/background.png &
 bitwarden-desktop &
 
 discord & 
+
+blueman-applet &
