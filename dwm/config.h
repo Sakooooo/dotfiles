@@ -94,11 +94,11 @@ static const char *mutevol[] = {"/usr/bin/pactl", "set-sink-mute", "0",
                                 "toggle", NULL};
 
 /* for backlight */
-static const char *light_up[] = {"/usr/bin/light", "-A", "5", NULL};
-static const char *light_down[] = {"/usr/bin/light", "-U", "5", NULL};
+static const char *light_up[] = { "/usr/bin/light", "-s", "sysfs/backlight/auto", "-A", "5", NULL};
+static const char *light_down[] = { "/usr/bin/light", "-s", "sysfs/backlight/auto", "-U", "5", NULL};
 
-/* for player control */
-static const char *medplaypausecmd[] = {"playerctl", "play-pause", NULL};
+    /* for player control */
+    static const char *medplaypausecmd[] = {"playerctl", "play-pause", NULL};
 static const char *mednextcmd[] = {"playerctl", "next", NULL};
 static const char *medprevcmd[] = {"playerctl", "previous", NULL};
 
